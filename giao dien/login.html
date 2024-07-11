@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập và Đăng ký</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container login-container">
+            <h2>Đăng nhập</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="login-username">Tên đăng nhập</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Mật khẩu</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Đăng nhập</button>
+            </form>
+            <p>Bạn chưa có tài khoản? <a href="#" id="showRegister">Đăng ký</a></p>
+        </div>
+        
+        <div class="form-container register-container">
+            <h2>Đăng ký</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="register-username">Tên đăng nhập</label>
+                    <input type="text" id="register-username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Mật khẩu</label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+                <button type="submit">Đăng ký</button>
+            </form>
+            <p>Đã có tài khoản? <a href="#" id="showLogin">Đăng nhập</a></p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

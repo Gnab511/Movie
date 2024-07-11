@@ -1,0 +1,115 @@
+/* Đặt các thuộc tính cơ bản cho toàn bộ trang */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Chọn font chữ cho trang */
+    background: url('https://s199.imacdn.com/vg/2024/05/13/5797075a6c9a279e_4a5935c18f9139ec_225183317155682156118684.jpg') no-repeat center center fixed; /* Đặt hình nền */
+    background-size: cover; /* Đặt kích thước của hình nền */
+    display: flex; /* Sử dụng Flexbox cho bố cục */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    height: 100vh; /* Chiều cao của trang là 100% chiều cao khung nhìn */
+}
+
+/* Đặt các thuộc tính cho container chứa form đăng nhập và đăng ký */
+.container {
+    display: flex;
+    flex-direction: column; /* Xếp các phần tử con theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử con theo chiều ngang */
+}
+
+/* Đặt các thuộc tính cho từng form container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Đặt màu nền trắng với độ mờ */
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Đặt đổ bóng */
+    width: 300px; /* Chiều rộng của container */
+    padding: 20px; /* Khoảng cách bên trong container */
+    text-align: center; /* Căn giữa nội dung văn bản */
+    display: none; /* Ẩn container theo mặc định */
+    border: 2px solid grey;
+}
+
+/* Hiển thị container khi có class 'active' */
+.form-container.active {
+    display: block;
+}
+
+/* Đặt thuộc tính cho tiêu đề form */
+h2 {
+    margin: 0 0 20px; /* Khoảng cách phía dưới tiêu đề */
+    color: red; /* Màu chữ */
+    font-style: italic;
+
+}
+
+/* Đặt thuộc tính cho các nhóm input */
+.input-group {
+    margin-bottom: 15px; /* Khoảng cách phía dưới nhóm input */
+    text-align: left; /* Căn trái văn bản bên trong nhóm input */
+   
+}
+
+/* Đặt thuộc tính cho nhãn input */
+.input-group label {
+    display: block; /* Hiển thị nhãn dạng block */
+    margin-bottom: 5px; /* Khoảng cách phía dưới nhãn */
+    color:black; /* Màu chữ của nhãn */
+    
+}
+
+/* Đặt thuộc tính cho input */
+.input-group input {
+    width: 93%; /* Chiều rộng 100% container chứa */
+    padding: 10px; /* Khoảng cách bên trong input */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 5px; /* Bo góc input */
+    border:1px  solid  ;
+}
+
+/* Đặt thuộc tính riêng cho nhóm input nhớ mật khẩu */
+.container .input-group.remember-me {
+    display: flex; /* Sử dụng Flexbox để sắp xếp */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    
+}
+
+/* Đặt khoảng cách cho nhãn nhớ mật khẩu */
+.input-group.remember-me label {
+    max-width: 100%;
+
+}
+
+/* Đặt thuộc tính cho nút */
+button {
+    background-color: #3498db; /* Màu nền nút */
+    color: #fff; /* Màu chữ của nút */
+    border: none; /* Bỏ đường viền */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    border-radius: 5px; /* Bo góc nút */
+    cursor: pointer; /* Thay đổi con trỏ chuột khi di chuột qua nút */
+}
+
+/* Đặt thuộc tính khi di chuột qua nút */
+button:hover {
+    background-color: #fff; /* Đổi màu nền khi di chuột qua */
+    color: black;
+}
+
+/* Đặt thuộc tính cho đoạn văn bản */
+p {
+    margin-top: 15px; /* Khoảng cách phía trên đoạn văn bản */
+    color:red; /* Màu chữ */
+    font-style: italic;
+}
+
+/* Đặt thuộc tính cho liên kết trong đoạn văn bản */
+p a {
+    color: red; /* Màu chữ của liên kết */
+    text-decoration: none; /* Bỏ gạch chân liên kết */
+}
+
+/* Đặt thuộc tính khi di chuột qua liên kết */
+p a:hover {
+    text-decoration: underline; /* Gạch chân liên kết khi di chuột qua */
+}
